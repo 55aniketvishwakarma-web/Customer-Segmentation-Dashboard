@@ -1,1 +1,64 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Customer Segmentation Dashboard</title><link rel="stylesheet" href="style.css"></head><body><header class="hero"><div><p class="eyebrow">DATA SCIENCE PROJECT</p><h1>Customer Segmentation</h1><p class="subtitle">Interactive K-Means clustering dashboard built with HTML, CSS and JavaScript.</p></div><button id="runBtn">Run K-Means</button></header><main class="container"><section class="controls card"><div><label>K</label><select id="kValue"><option>2</option><option>3</option><option selected>4</option><option>5</option></select></div><div><label>X-axis</label><select id="featureX"><option selected value="AnnualIncome">Annual Income</option><option value="Age">Age</option><option value="SpendingScore">Spending Score</option></select></div><div><label>Y-axis</label><select id="featureY"><option selected value="SpendingScore">Spending Score</option><option value="AnnualIncome">Annual Income</option><option value="Age">Age</option></select></div><div class="status" id="status">Ready</div></section><section class="stats-grid"><div class="stat card"><span>Total Customers</span><strong id="totalCustomers">20</strong></div><div class="stat card"><span>Clusters</span><strong id="clusterCount">4</strong></div><div class="stat card"><span>Iterations</span><strong id="iterations">0</strong></div><div class="stat card"><span>Largest Cluster</span><strong id="largestCluster">-</strong></div></section><section class="dashboard-grid"><div class="card chart-card"><div class="section-head"><div><h2>Cluster Visualization</h2><p>Customers grouped by similarity.</p></div><div class="legend" id="legend"></div></div><canvas id="scatterCanvas"></canvas></div><div class="card"><h2>Cluster Summary</h2><p class="muted">Average values for each discovered group.</p><div id="clusterSummary"></div></div></section><section class="card"><h2>How K-Means Works</h2><div class="steps"><div><b>1</b>Choose K</div><div><b>2</b>Initialize centroids</div><div><b>3</b>Assign customers</div><div><b>4</b>Recalculate centroids</div><div><b>5</b>Repeat until stable</div></div></section><section class="card"><h2>Customer Data</h2><div class="table-wrap"><table><thead><tr><th>ID</th><th>Age</th><th>Annual Income</th><th>Spending Score</th><th>Cluster</th></tr></thead><tbody id="dataTable"></tbody></table></div></section><section class="card interview"><h2>Interview Explanation</h2><p>I created an interactive customer segmentation dashboard using HTML, CSS and JavaScript. I used K-Means, an unsupervised machine learning algorithm, to group customers based on age, annual income and spending score. JavaScript performs the clustering, while HTML and CSS provide the dashboard interface. The results are shown through a scatter plot, cluster summaries and a customer table.</p></section></main><footer>Educational project • Synthetic dataset • HTML + CSS + JavaScript</footer><script src="script.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport"
+            content="width=device-width,initial-scale=1.0"><title>Customer
+            Segmentation Dashboard</title><link rel="stylesheet"
+            href="style.css"></head><body><header class="hero"><div><p
+                    class="eyebrow">DATA SCIENCE PROJECT</p><h1>Customer
+                    Segmentation</h1><p class="subtitle">Interactive K-Means
+                    clustering dashboard built with HTML, CSS and
+                    JavaScript.</p></div><button id="runBtn">Run
+                K-Means</button></header><main class="container"><section
+                class="controls card"><div><label>K</label><select
+                        id="kValue"><option>2</option><option>3</option><option
+                            selected>4</option><option>5</option></select></div><div><label>X-axis</label><select
+                        id="featureX"><option selected
+                            value="AnnualIncome">Annual Income</option><option
+                            value="Age">Age</option><option
+                            value="SpendingScore">Spending
+                            Score</option></select></div><div><label>Y-axis</label><select
+                        id="featureY"><option selected
+                            value="SpendingScore">Spending Score</option><option
+                            value="AnnualIncome">Annual Income</option><option
+                            value="Age">Age</option></select></div><div
+                    class="status" id="status">Ready</div></section><section
+                class="stats-grid"><div class="stat card"><span>Total
+                        Customers</span><strong
+                        id="totalCustomers">20</strong></div><div
+                    class="stat card"><span>Clusters</span><strong
+                        id="clusterCount">4</strong></div><div
+                    class="stat card"><span>Iterations</span><strong
+                        id="iterations">0</strong></div><div
+                    class="stat card"><span>Largest Cluster</span><strong
+                        id="largestCluster">-</strong></div></section><section
+                class="dashboard-grid"><div class="card chart-card"><div
+                        class="section-head"><div><h2>Cluster
+                                Visualization</h2><p>Customers grouped by
+                                similarity.</p></div><div class="legend"
+                            id="legend"></div></div><canvas
+                        id="scatterCanvas"></canvas></div><div
+                    class="card"><h2>Cluster Summary</h2><p
+                        class="muted">Average values for each discovered
+                        group.</p><div
+                        id="clusterSummary"></div></div></section><section
+                class="card"><h2>How K-Means Works</h2><div
+                    class="steps"><div><b>1</b>Choose
+                        K</div><div><b>2</b>Initialize
+                        centroids</div><div><b>3</b>Assign
+                        customers</div><div><b>4</b>Recalculate
+                        centroids</div><div><b>5</b>Repeat until
+                        stable</div></div></section><section
+                class="card"><h2>Customer Data</h2><div
+                    class="table-wrap"><table><thead><tr><th>ID</th><th>Age</th><th>Annual
+                                    Income</th><th>Spending
+                                    Score</th><th>Cluster</th></tr></thead><tbody
+                            id="dataTable"></tbody></table></div></section><section
+                class="card interview"><h2>Interview Explanation</h2><p>I
+                    created an interactive customer segmentation dashboard using
+                    HTML, CSS and JavaScript. I used K-Means, an unsupervised
+                    machine learning algorithm, to group customers based on age,
+                    annual income and spending score. JavaScript performs the
+                    clustering, while HTML and CSS provide the dashboard
+                    interface. The results are shown through a scatter plot,
+                    cluster summaries and a customer
+                    table.</p></section></main><footer>Educational project •
+            Synthetic dataset • HTML + CSS + JavaScript</footer><script
+            src="script.js"></script></body></html>
